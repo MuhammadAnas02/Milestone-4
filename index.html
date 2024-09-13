@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div>
+            <h1 id="heading1">Resume Builder</h1>
+            <form id="resume-form">
+                <input type="text" placeholder="Enter your name" id="names" required>
+                <br>
+                <input type="text" placeholder="Enter your FatherName" id="fname" required>
+                <br>
+                <input type="number" placeholder="Enter your age" id="age" required>
+                <br>
+                <label for="gender" >Select Gender</label>
+                <br>
+                <select name="gender" id="gender">
+                    <option value="">--Select--</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Rather not to say">Rather not to say</option>
+                </select>
+
+                <h3 id="heading2">Enter your qualification</h3>
+                <input type="text" placeholder="Enter your Matric" id="matric" required>
+                <br>
+                <input type="text" placeholder="Enter your Intermidiate" id="intermidiate">
+                <br>
+                <input type="text" placeholder="Enter your higher education" id="higher">
+
+                <h3 id="heading3">Enter your Skills</h3>
+                <input type="text" id="skills" placeholder="Enter your Skills" required>
+
+                <h3 id="heading4">Upload your photo</h3>
+                <input type="file" id="photo-upload" accept="image/*">
+
+                <button type="submit">Generate resume</button>
+            </form>
+            <div id="resume-display"></div>
+            <button id="share-url-btn" style="display:none;">Share URL</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
